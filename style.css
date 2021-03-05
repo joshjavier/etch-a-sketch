@@ -1,0 +1,61 @@
+:root {
+  --bg-color: #EAE2B7;
+  --primary-color: #D62828;
+  --secondary-color: #FEFAE0;
+  --dark: #003049;
+  --white: #FFF;
+  --paint-color: #FCBF49;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3em 1em;
+  text-align: center;
+  font-family: monospace;
+  background: var(--bg-color);
+  color: var(--dark);
+}
+
+button {
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1em 1.5em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+button:hover,
+button:active {
+  opacity: 80%;
+  top: -3px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  cursor: crosshair;
+}
+
+.cell {
+  background: var(--white);
+  padding-bottom: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+button,
+.container {
+  margin-top: 2em;
+}
